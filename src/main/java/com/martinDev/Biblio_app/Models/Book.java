@@ -16,8 +16,8 @@ public class Book {
     private UUID book_id;
     private String title;
     @Column(name = "nbr_disponible")
-    private int nbrDisponible;
+    private Integer nbrDisponible;
     @Column(name = "nbr_total")
-    private int nbrTotal;
+    private Integer nbrTotal;
 
 }
