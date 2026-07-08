@@ -5,12 +5,13 @@ import com.martinDev.Biblio_app.Mappers.LoanMapper;
 import com.martinDev.Biblio_app.Models.Loan;
 import com.martinDev.Biblio_app.Repositories.LoanRepository;
 import com.martinDev.Biblio_app.Services.interfaces.LoanService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
-
+@Service
 public class LoanServiceImpl implements LoanService {
 
     final LoanRepository loanRepository;

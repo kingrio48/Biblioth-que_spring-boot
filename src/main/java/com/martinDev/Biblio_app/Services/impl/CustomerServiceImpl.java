@@ -5,12 +5,13 @@ import com.martinDev.Biblio_app.Mappers.CustomerMapper;
 import com.martinDev.Biblio_app.Models.Customer;
 import com.martinDev.Biblio_app.Repositories.CustomerRepository;
 import com.martinDev.Biblio_app.Services.interfaces.CustomersService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
-
+@Service
 public class CustomerServiceImpl implements CustomersService {
     final CustomerRepository customerRepository;
     final CustomerMapper customerMapper;
