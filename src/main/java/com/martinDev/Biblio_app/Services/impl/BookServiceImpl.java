@@ -90,4 +90,10 @@ public class BookServiceImpl implements BookService {
         bookRepository.deleteAll();
         return "La liste des livre a été supprimé avec succès";
     }
+
+    @Override
+    public long count() {
+        return bookRepository.count();
+    }
+
 }

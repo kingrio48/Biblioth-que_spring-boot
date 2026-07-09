@@ -14,4 +14,5 @@ public interface BookService {
     Optional<BookDto> findBookById(UUID book_id);
     String deleteBookById(UUID book_id);
     String deleteAllBooks();
+    long count();
 }
