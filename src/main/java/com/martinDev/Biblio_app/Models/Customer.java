@@ -26,7 +26,7 @@ public class Customer {
     @Email(message = "Fromat de l'email incorrect")
     private String email;
     @NotBlank(message = "Le numéro ne peut pas être vide")
-    @Pattern(regexp = "^\\d{9}$", message = "le numéro de téléphone doit avoir exactement 9 chiffres")
+    //@Pattern(regexp = "^\\d{9}$", message = "le numéro de téléphone doit avoir exactement 9 chiffres")
     @Column(unique = true)
     private String phone_number;
 }

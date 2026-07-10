@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@Controller
-@RequestMapping("/customer")
+@RestController
+@RequestMapping("/customers")
 public class CustomerController {
     final private CustomersService customersService;
 
@@ -22,7 +22,7 @@ public class CustomerController {
     public CustomerDto createCustomer(@RequestBody CustomerDto customerDto){
         return customersService.createCustomer(customerDto);
     }
-    @GetMapping("/customers")
+    @GetMapping
     public List<CustomerDto> findAllCustomers(){
         return customersService.findAllCustomer();
     }

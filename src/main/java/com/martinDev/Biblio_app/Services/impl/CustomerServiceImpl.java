@@ -83,4 +83,10 @@ public class CustomerServiceImpl implements CustomersService {
         customerRepository.deleteAll();
         return "La liste des clients a été supprimé ";
     }
+
+    @Override
+    public long count() {
+        return customerRepository.count();
+    }
+
 }

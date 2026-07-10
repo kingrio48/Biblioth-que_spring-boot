@@ -13,4 +13,5 @@ public interface CustomersService {
     List<CustomerDto> findAllCustomer();
     String deleteCustomer(UUID customer_id);
     String deleteAllCustomer();
+    long count();
 }

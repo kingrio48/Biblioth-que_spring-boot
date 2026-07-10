@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@Controller
-@RequestMapping("/loan")
+@RestController
+@RequestMapping("/loans")
 public class LoanController {
     final private LoanService loanService;
 
